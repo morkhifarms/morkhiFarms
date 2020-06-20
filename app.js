@@ -25,61 +25,61 @@ var clickedItem = document.getElementById("order"),
     //Items that gets added to the order cart
     listDozen = `
     <div id="eggs12" class="orderListItem">
-    <div contenteditable="true" >${itemsAvailable[0].value}</div>
+    <div>${itemsAvailable[0].value}</div>
         </div>`,
     listOneTray = `
     <div id="oneTray" class="orderListItem">
-    <div contenteditable="true" >${itemsAvailable[1].value}</div>
+    <div>${itemsAvailable[1].value}</div>
         </div>`,
     listTwoTray = `
     <div id="twoTray" class="orderListItem">
-    <div contenteditable="true" >${itemsAvailable[2].value}</div>
+    <div>${itemsAvailable[2].value}</div>
         </div>`,
     listTwoLtrs = `
     <div id="twoLtrs" class="orderListItem">
-    <div contenteditable="true" >${itemsAvailable[3].value}</div>
+    <div>${itemsAvailable[3].value}</div>
         </div>`,
     listThreeLtrs = `
     <div id="threeLtrs" class="orderListItem">
-    <div contenteditable="true" >${itemsAvailable[4].value}</div>
+    <div>${itemsAvailable[4].value}</div>
         </div>`,
     listFourLtrs = `
     <div id="fourLtrs" class="orderListItem">
-    <div contenteditable="true" >${itemsAvailable[5].value}</div>
+    <div>${itemsAvailable[5].value}</div>
         </div>`,
     listVegGhiya = `
     <div id="vegGhiya" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[6].value}</div>
         </div>`,
     listVegMint = `
     <div id="vegMint" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[7].value}</div>
         </div>`,
     listVegDhania = `
     <div id="vegDhania" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[8].value}</div>
         </div>`,
     listVegAloo = `
     <div id="vegAloo" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[9].value}</div>
         </div>`     
     listVegOnion = `
     <div id="vegOnion" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[10].value}</div>
         </div>`    
     listVegTomatoes = `
     <div id="vegTomato" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[11].value}</div>
         </div>` 
     listVegMirchi = `
     <div id="vegMirchi" class="orderListItem">
-    <div contenteditable="true"  title="You can edit this on WhatsApp screen">
+    <div title="You can edit this on WhatsApp screen">
         ${itemsAvailable[12].value}</div>
         </div>`  
 

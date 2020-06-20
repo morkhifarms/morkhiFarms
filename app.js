@@ -246,7 +246,7 @@ let placeOrder = () => {
         document.getElementById("order").contains(document.getElementById("vegTomato"))||
         document.getElementById("order").contains(document.getElementById("vegMirchi"))?
         orderCart.innerHTML = `<a href="https://chat.whatsapp.com/Gk3osGoi2xv1dyG1eNqWZP?text=${enTxt}">Kindly Deliver It</a>` : orderCart.innerText = "Cart Empty";
-
+//https://wa.me/918683000497
 
     if (orderCart.innerText === "Cart Empty") {
         orderCart.classList.add("disabled")

@@ -21,7 +21,7 @@
     margin-bottom:50px;
     font-size: 1rem;
   }
-  a>button{
+  button{
     padding:15px;
     width:14rem;
     border:2px #F8DD53 solid;
@@ -115,4 +115,58 @@
   }
   .marginBottom{
     margin-bottom: 2rem;
+  }
+  /*Basic app layout ends*/
+
+  /*order cart process*/
+  .added{
+    background-color:green;
+    color:white; 
+  }
+  .hide{
+    display:none
+  }
+  #order{
+    margin-top:30px;
+    text-align:center;
+    padding:20px;
+    position:relative
+  }
+  #order::before{
+    content:"Orders Considered:";
+      font-size:0.6rem;
+    position:absolute;
+    top:-11px;
+    left:0
+  }
+  #orderCart{
+    border:0.5pt solid #666;
+    padding:7px;
+    border-radius:5px;
+    margin-top:10px
+  }
+  #orderCart:hover{
+    background-color:orange;
+    cursor: pointer
+  }
+  #orderCart>a{
+    text-decoration:none;
+    color:black
+  }
+  .orderListItem{
+    width:170px;
+    padding:5px;
+    display:grid;
+    text-align:left;
+    grid-template-columns:1fr;
+    justify-content:center;
+    align-items:center;
+    grid-gap:5px;
+    font-size:0.8rem;
+    text-transform:capitalize;
+    border-bottom:1px solid #888
+  }
+  .disabled{
+    pointer-events:none;
+    color:#777
   }

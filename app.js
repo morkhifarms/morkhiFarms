@@ -229,6 +229,7 @@ itemsAvailable[12].addEventListener('click', (e) => {
 
 
 //The Only Function that does the job for placing order and do nothing if empty
+//encoding the text on the go from cart and adding it to the anchor tag for whatsapp encoded text message
 let placeOrder = () => {
     enTxt = encodeURI(clickedItem.innerText)
     document.getElementById("order").contains(document.getElementById("eggs12")) ||

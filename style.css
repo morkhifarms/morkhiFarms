@@ -134,11 +134,11 @@
     position:relative
   }
   #order::before{
-    content:"Orders Considered:";
+    content:"Orders Considered: [ you can edit quantity on WhatsApp screen ]";
       font-size:0.6rem;
     position:absolute;
     top:-11px;
-    left:25px
+    left:15px
   }
   #orderCart{
     border:0.5pt solid #666;

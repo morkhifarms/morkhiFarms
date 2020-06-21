@@ -27,7 +27,9 @@
     border:2px #F8DD53 solid;
     border-radius:5px;
     background-color: #fff;
+    position: relative;
   }
+ 
   .header, .footer {
     grid-area: header;
     text-align:center;
@@ -135,10 +137,10 @@
   }
   #order::before{
     content:"Edit Order Quantities on WhatsApp Screen";
-      font-size:0.6rem;
+    font-size:0.6rem;
     position:absolute;
     top:-11px;
-    left:15px
+    left:25px
   }
   #orderCart{
     border:0.5pt solid #666;
@@ -197,4 +199,20 @@
   .payMethods{
     margin-top: 10px;
     padding: 5px;
+  }
+  .new::after{
+    content: "🎗price drop";
+    color: rgb(103, 103, 103);
+    font-size: 0.7rem;
+    position: absolute;
+    top:2px;
+    right:5px;
+  }
+  .offer::after{
+    content: "🎗price drop";
+    color: #676767;
+    font-size: 0.7rem;
+    position: absolute;
+    top:10px;
+    left:5px;
   }

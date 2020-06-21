@@ -264,3 +264,4 @@ window.addEventListener('userproximity', function(event) {
       navigator.mozPower.screenEnabled = true;
     }
   });
+  document.domain !== "www.morkhifarms.in"?window.close():""

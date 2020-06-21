@@ -49,37 +49,37 @@ var clickedItem = document.getElementById("order"),
         </div>`,
     listVegGhiya = `
     <div id="vegGhiya" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[6].value}</div>
         </div>`,
     listVegMint = `
     <div id="vegMint" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[7].value}</div>
         </div>`,
     listVegDhania = `
     <div id="vegDhania" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[8].value}</div>
         </div>`,
     listVegAloo = `
     <div id="vegAloo" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[9].value}</div>
         </div>`     
     listVegOnion = `
     <div id="vegOnion" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[10].value}</div>
         </div>`    
     listVegTomatoes = `
     <div id="vegTomato" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[11].value}</div>
         </div>` 
     listVegMirchi = `
     <div id="vegMirchi" class="orderListItem">
-    <div title="You can edit this on WhatsApp screen">
+    <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[12].value}</div>
         </div>`  
 
@@ -254,3 +254,13 @@ let placeOrder = () => {
     } else return
 
 }
+
+window.addEventListener('userproximity', function(event) {
+    if (event.near) {
+      // let's power off the screen
+      navigator.mozPower.screenEnabled = false;
+    } else {
+      // Otherwise, let's power on the screen
+      navigator.mozPower.screenEnabled = true;
+    }
+  });

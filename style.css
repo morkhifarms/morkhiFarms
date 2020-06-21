@@ -134,7 +134,7 @@
     position:relative
   }
   #order::before{
-    content:"Orders Considered: [ you can edit quantity on WhatsApp screen ]";
+    content:"Edit Order Quantities on WhatsApp Screen";
       font-size:0.6rem;
     position:absolute;
     top:-11px;

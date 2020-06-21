@@ -232,7 +232,7 @@ itemsAvailable[12].addEventListener('click', (e) => {
 //encoding the text on the go from cart and adding it to the anchor tag for whatsapp encoded text message
 let placeOrder = () => {
     enTxt = encodeURI(clickedItem.innerText)
-    document.getElementById("order").contains(document.getElementById("eggs12")) ||
+        document.getElementById("order").contains(document.getElementById("eggs12"))   ||
         document.getElementById("order").contains(document.getElementById("oneTray"))  ||
         document.getElementById("order").contains(document.getElementById("twoTray"))  ||
         document.getElementById("order").contains(document.getElementById("twoLtrs"))  ||
@@ -245,7 +245,7 @@ let placeOrder = () => {
         document.getElementById("order").contains(document.getElementById("vegOnion")) ||
         document.getElementById("order").contains(document.getElementById("vegTomato"))||
         document.getElementById("order").contains(document.getElementById("vegMirchi"))?
-        orderCart.innerHTML = `<a href="https://chat.whatsapp.com/Gk3osGoi2xv1dyG1eNqWZP?text=${enTxt}">Kindly Deliver It</a>` : orderCart.innerText = "Cart Empty";
+        orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}">Kindly Deliver It</a>` : orderCart.innerText = "Cart Empty";
 //https://wa.me/918683000497
 
     if (orderCart.innerText === "Cart Empty") {

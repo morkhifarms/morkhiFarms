@@ -168,5 +168,19 @@
   }
   .disabled{
     pointer-events:none;
-    color:#777
+    color:#777;
+    border:1px dotted #888;
+  }
+  .outOfStock{
+    pointer-events:none;
+    color:#777;
+    border:1px dotted #888;
+    position: relative;
+  }
+  .outOfStock::before{
+    position: absolute;
+    content: "out of stock";
+    font-size: 0.7rem;
+    bottom: 2px;
+    left:38%
   }

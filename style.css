@@ -121,7 +121,8 @@
   /*order cart process*/
   .added{
     background-color:green;
-    color:white; 
+    color:white;
+    border-color:green; 
   }
   .hide{
     display:none
@@ -137,7 +138,7 @@
       font-size:0.6rem;
     position:absolute;
     top:-11px;
-    left:0
+    left:25px
   }
   #orderCart{
     border:0.5pt solid #666;
@@ -154,7 +155,7 @@
     color:black
   }
   .orderListItem{
-    width:170px;
+    width:200px;
     padding:5px;
     display:grid;
     text-align:left;
@@ -162,9 +163,18 @@
     justify-content:center;
     align-items:center;
     grid-gap:5px;
-    font-size:0.8rem;
+    font-size:1rem;
     text-transform:capitalize;
-    border-bottom:1px solid #888
+    border-bottom:1px solid #888;
+    position: relative;
+  }
+  .orderListItem::before{
+    content: "✓";
+    position: absolute;
+    left:-5px;
+    color:green;
+    font-size: 0.8rem;
+    top:9px
   }
   .disabled{
     pointer-events:none;

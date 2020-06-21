@@ -30,18 +30,24 @@
     <!-- End Google Tag Manager -->
 <link rel="stylesheet" href="style.css">
 <style>
+  *{
+    box-sizing: border-box;
+  }
   body{
-    background-image:linear-gradient(#f6b73c,#f02472);
+    background-image:linear-gradient(#f6b73c,#db4b57);
     background-repeat:no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 105vh;
     font-family:'Inria Sans',sans-serif;
     text-align: center;
   }
-  p{
+  p:not(.ftr){
     font-family:monospace;
     font-size: 3.7vw;
-    color:white
+    color:white;
+    width: 100vw;
+    background-color: #372618;
+    padding: 20px;
   }
   header{
     display: flex;
@@ -56,6 +62,13 @@
   span{
     font-size: 8rem;
     font-weight: bolder;
+  }
+  .ftr{
+    font-size: 2.1vw;
+    color: rgb(0, 0, 0);
+  }
+  sup{
+    font-size: 0.6rem;
   }
 </style>
 <title>Morkhi Farms Android App</title>
@@ -73,6 +86,11 @@
   <p>Download MorkhiFarms.apk - ver.1.0</p>
 </div>
 <div><span>June 2020</span></div>
+
+  <p class="ftr">MADE WITH ❤️LOVE FOR FARMER COMMUNITY</p>
+
+  <SUP>VIPULANAND.IN</SUP>
+
 <!--<script src="app.js"></script>-->
 </body>
 </html>

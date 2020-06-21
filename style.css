@@ -113,6 +113,12 @@
   }
   .callUs{
     border:2px #523b27 solid;
+  }
+  .share{
+    border:2px #0e9867 solid;
+  }
+  .callUs,.share{
+    border-radius: 5px;
     border-radius: 5px;
   }
   .marginBottom{

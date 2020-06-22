@@ -96,37 +96,6 @@
       justify-content: center;
       align-items: center;
   }
-  .logo{
-    background: url(images/morkhi_logo.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 69.625px;
-    padding: 65px;
-    height: auto;
-    margin-top: 52px;
-
-  }
-  .eggsCategory,
-  .milkCategory,
-  .vegetablesCategory{
-    height: 50px;
-    padding:50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .eggsCategory{
-    background-image: url(images/eggs.png);
-    width:50px;
-  }
-  .milkCategory{
-    background-image: url(images/a2sahiwal.png);
-    width: 48.56px;
-  }
-  .vegetablesCategory{
-    background-image: url(images/vege.png);
-    width:50px;
-  }
   .brandColor{
       color: #E29414;
   }

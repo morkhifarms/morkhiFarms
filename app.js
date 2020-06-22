@@ -224,14 +224,15 @@ itemsAvailable[12].addEventListener('click', (e) => {
     clickedItem.contains(vegMirchi) ? 
     clickedItem.removeChild(vegMirchi) : 
     clickedItem.insertAdjacentHTML('afterBegin', listVegMirchi)
-    placeOrder()
+    placeOrder()  
 })
 
 
 //The Only Function that does the job for placing order and do nothing if empty
 //encoding the text on the go from cart and adding it to the anchor tag for whatsapp encoded text message
 let placeOrder = () => {
-    enTxt = encodeURI(clickedItem.innerText)
+    document.getElementById("orderCart").innerText === "Your Order Appears Here!"?document.getElementById("orderCart").innerText ="":console.log("nope");
+    document.getElementById("orderCart").innerText===""?enTxt = encodeURI(clickedItem.innerText):console.log("nogo")
         document.getElementById("order").contains(document.getElementById("eggs12"))   ||
         document.getElementById("order").contains(document.getElementById("oneTray"))  ||
         document.getElementById("order").contains(document.getElementById("twoTray"))  ||
@@ -245,7 +246,7 @@ let placeOrder = () => {
         document.getElementById("order").contains(document.getElementById("vegOnion")) ||
         document.getElementById("order").contains(document.getElementById("vegTomato"))||
         document.getElementById("order").contains(document.getElementById("vegMirchi"))?
-        orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}"><button class="waOrder"> Kindly Deliver It</button></a>` : orderCart.innerText = "Cart Empty";
+        orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}"><button class="waOrder"> Kindly Deliver It</button></a>`: orderCart.innerText = "Cart Empty";
 //https://wa.me/918683000497
 
     if (orderCart.innerText === "Cart Empty") {
@@ -264,4 +265,4 @@ window.addEventListener('userproximity', function(event) {
       navigator.mozPower.screenEnabled = true;
     }
   });
-  document.domain !== "www.morkhifarms.in"?window.close():""
+  //document.domain !== "www.morkhifarms.in"?window.close():""

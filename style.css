@@ -191,10 +191,15 @@
     left:25px
   }
   #orderCart{
-    border:0.5pt solid #666;
+    /* border:0.5pt solid #666; */
     padding:7px;
     border-radius:5px;
     margin-top:10px
+  }
+  .waOrder{
+    border-color: rgb(57, 57, 57);
+    border-width: 2px;
+    border-style: inset;
   }
   #orderCart:hover{
     background-color:orange;

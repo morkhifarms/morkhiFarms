@@ -255,7 +255,7 @@
     padding: 5px;
   }
   .new::after{
-    content: "🎗price drop";
+    content: "🎗";
     color: rgb(103, 103, 103);
     font-size: 0.7rem;
     position: absolute;

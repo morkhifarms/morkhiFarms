@@ -32,7 +32,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Morkhi Farms</title>
 </head>
-<body>
+<body id="body">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N22XR3P"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -154,24 +154,6 @@
           </div>
           </div>
           <script src="app.js"></script>
-          <!-- <script>function ready(fn) {
-  if (document.readyState != 'loading') {
-    fn();
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', fn);
-  } else {
-    document.attachEvent('onreadystatechange', function() {
-      if (document.readyState != 'loading')
-        fn();
-    });
-  }
-}
-
-// test
-window.ready(function() {
-   
-});
-</script> -->
 </body>
 </html>
 <style>
@@ -199,3 +181,8 @@ window.ready(function() {
   }
 </style>
 
+<script>
+  window.addEventListener('load', function() {
+        document.getElementById('body').className += "loaded";
+});
+</script>

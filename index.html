@@ -140,32 +140,34 @@
             <SUP>VIPULANAND.IN</SUP>
           </div>
           </div>
+          <script>
+            function loadBackgrounds() {
+            if (document.getElementById) {
+              document.getElementById("mfLogo").style.backgroundImage = "url(https://morkhifarms.in/images/morkhi_logo.webp) no-repeat -9999px -9999px";
+              document.getElementById("mfEggs").style.backgroundImage = "url(https://morkhifarms.in/images/eggs.png) no-repeat -9999px -9999px";
+              document.getElementById("mfMilk").style.backgroundImage = "url(https://morkhifarms.in/images/a2sahiwal.png) no-repeat -9999px -9999px";
+              document.getElementById("mfVege").style.backgroundImage = "url(https://morkhifarms.in/images/vege.png) no-repeat -9999px -9999px";
+            }
+            console.log("images Loaded ok")
+          }
+          
+          function whenLoadEventReady(loadBgsFunction){
+              let quicklyLoad = window.onload;
+                      if(typeof window.onload !== 'function'){
+                        window.onload = loadBgsFunction;
+                      }else {
+                        window.onload = function(){
+                          if(quicklyLoad){
+                            quicklyLoad();
+                          }
+                          loadBgsFunction();
+                        }
+                      }
+          }
+          whenLoadEventReady(loadBackgrounds);
+          </script>
+          
           <script src="app.js"></script>
+
 </body>
 </html>
-<script>
-  function loadBackgrounds() {
-  if (document.getElementById) {
-    document.getElementById("mfLogo").style.backgroundImage = "url(https://morkhifarms.in/images/morkhi_logo.webp) no-repeat -9999px -9999px";
-    document.getElementById("mfEggs").style.backgroundImage = "url(https://morkhifarms.in/images/eggs.png) no-repeat -9999px -9999px";
-    document.getElementById("mfMilk").style.backgroundImage = "url(https://morkhifarms.in/images/a2sahiwal.png) no-repeat -9999px -9999px";
-    document.getElementById("mfVege").style.backgroundImage = "url(https://morkhifarms.in/images/vege.png) no-repeat -9999px -9999px";
-  }
-  console.log("images Loaded ok")
-}
-
-function whenLoadEventReady(loadBgsFunction){
-    let quicklyLoad = window.onload;
-            if(typeof window.onload !== 'function'){
-              window.onload = loadBgsFunction;
-            }else {
-              window.onload = function(){
-                if(quicklyLoad){
-                  quicklyLoad();
-                }
-                loadBgsFunction();
-              }
-            }
-}
-whenLoadEventReady(loadBackgrounds);
-</script>

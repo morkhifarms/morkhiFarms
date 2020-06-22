@@ -8,7 +8,7 @@
   }
   #reload{
     position: fixed;
-    top: 10px;
+    bottom: 70px;
     right: 12px;
     rotate: 190deg;
     z-index: 10;

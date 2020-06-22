@@ -200,6 +200,7 @@
     border-color: rgb(57, 57, 57);
     border-width: 2px;
     border-style: inset;
+    font-size: 1.01rem;
   }
   #orderCart:hover{
     background-color:orange;

@@ -9,7 +9,11 @@
       margin-bottom: 50px;
       padding-bottom: 1px;
   }
-  h4.marginBottom:before {
+  .orderOnWhatsApp{
+    margin-top: 60px;
+    position: relative;
+  }
+  .orderOnWhatsApp:before {
     content: " ";
     border-bottom: 0.8pt solid #EFAC47;
     width: 55px;

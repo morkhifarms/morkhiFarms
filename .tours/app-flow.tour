@@ -1,0 +1,60 @@
+{
+  "title": "app flow",
+  "steps": [
+    {
+      "file": "index.html",
+      "line": 23,
+      "description": "Optimizing for mobile users with slow internet speed"
+    },
+    {
+      "file": "index.html",
+      "line": 30,
+      "description": "loading all main images as contianer backgrounds in css"
+    },
+    {
+      "file": "index.html",
+      "line": 34,
+      "description": "declutering the first screen as this is going to be used for the future offers and notifications for the users"
+    },
+    {
+      "file": "index.html",
+      "line": 42,
+      "description": "orders are placed on whatsapp, thus making it fairly straight forward approach to extend the reach of the farmer to the urban residents. Essentials are already being delivered somehow. The fresh produce from local farmer is a focused effort and evolving eachday at \"vipulanand.in\""
+    },
+    {
+      "file": "index.html",
+      "line": 43,
+      "description": "farm produce sections vary from farmer to farmer however there are scenarios which are yet to be explored to bring healthy food choices to urban residents from farmer families"
+    },
+    {
+      "file": "index.html",
+      "line": 119,
+      "description": "This section is evolving really well, storing the daily orders recieved by the farmer and the user's order history. Notifications for the farmer on multiple phones and follow up on every single order is the biggest challenge and frmer need training on his temprament and attitude to deal politely with the urban residents. "
+    },
+    {
+      "file": "index.html",
+      "line": 122,
+      "description": "cart is yet not displaying the product prices on selection during the order journey. which gives liverage to the farmer to sell the produce at par as street vendor."
+    },
+    {
+      "file": "index.html",
+      "line": 126,
+      "description": "I still don't know why this reset should stay, because of webview of android sucks. and has slowed down the image loading very slow. some security scan engine run by andriod."
+    },
+    {
+      "file": "index.html",
+      "line": 136,
+      "description": "Money was never a consideration while making this part of the app. it was already concived. just that needed a farmer who is capable and ware of opening the direct selling channel for himself and other fellow farmers in his community."
+    },
+    {
+      "file": "index.html",
+      "line": 142,
+      "description": "and effort to load them all before user sees any text on the screen."
+    },
+    {
+      "file": "index.html",
+      "line": 168,
+      "description": "This is where all logic resides and evolving really veruy well, lot of refactoring done and will happen in future before this app unit become a template for the larger platform at state level."
+    }
+  ]
+}

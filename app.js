@@ -9,6 +9,9 @@ var clickedItem = document.getElementById("order"),
     twoLtrs,
     threeLtrs,
     fourLtrs,
+    halfKgGhee,
+    oneKgGhee,
+    twoKgGhee,
     vegGhiya,
     vegMint,
     vegDhania,
@@ -46,42 +49,55 @@ var clickedItem = document.getElementById("order"),
     listFourLtrs = `
     <div id="fourLtrs" class="orderListItem">
     <div>${itemsAvailable[5].value}</div>
+        </div>`,    
+    listHalfKgGhee = `
+    <div id="halfKgGhee" class="orderListItem">
+    <div>${itemsAvailable[6].value}</div>
+        </div>`,    
+    listOneKgGhee = `
+    <div id="oneKgGhee" class="orderListItem">
+    <div>${itemsAvailable[7].value}</div>
+        </div>`,    
+    listTwoKgGhee = `
+    <div id="twoKgGhee" class="orderListItem">
+    <div>${itemsAvailable[8].value}</div>
         </div>`,
     listVegGhiya = `
     <div id="vegGhiya" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[6].value}</div>
+        ${itemsAvailable[9].value}</div>
         </div>`,
     listVegMint = `
     <div id="vegMint" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[7].value}</div>
+        ${itemsAvailable[10].value}</div>
         </div>`,
     listVegDhania = `
     <div id="vegDhania" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[8].value}</div>
+        ${itemsAvailable[11].value}</div>
         </div>`,
     listVegAloo = `
     <div id="vegAloo" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[9].value}</div>
+        ${itemsAvailable[12].value}</div>
         </div>`     
     listVegOnion = `
     <div id="vegOnion" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[10].value}</div>
+        ${itemsAvailable[13].value}</div>
         </div>`    
     listVegTomatoes = `
     <div id="vegTomato" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[11].value}</div>
+        ${itemsAvailable[14].value}</div>
         </div>` 
     listVegMirchi = `
     <div id="vegMirchi" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
-        ${itemsAvailable[12].value}</div>
+        ${itemsAvailable[15].value}</div>
         </div>`  
+console.log(itemsAvailable);
 
 //add or remove items from the order Cart, 
 itemsAvailable[0].addEventListener('click', (e) => {
@@ -149,11 +165,40 @@ itemsAvailable[5].addEventListener('click', (e) => {
     clickedItem.insertAdjacentHTML('afterBegin', listFourLtrs)
     placeOrder()
 })
-
 itemsAvailable[6].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
     itemsAvailable[6].classList.toggle('added')
+    halfKgGhee = document.getElementById("halfKgGhee")
+    clickedItem.contains(halfKgGhee) ? 
+    clickedItem.removeChild(halfKgGhee) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listHalfKgGhee)
+    placeOrder()
+})
+itemsAvailable[7].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[7].classList.toggle('added')
+    oneKgGhee = document.getElementById("oneKgGhee")
+    clickedItem.contains(oneKgGhee) ? 
+    clickedItem.removeChild(oneKgGhee) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listOneKgGhee)
+    placeOrder()
+})
+itemsAvailable[8].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[8].classList.toggle('added')
+    twoKgGhee = document.getElementById("twoKgGhee")
+    clickedItem.contains(twoKgGhee) ? 
+    clickedItem.removeChild(twoKgGhee) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listTwoKgGhee)
+    placeOrder()
+})
+itemsAvailable[9].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[9].classList.toggle('added')
     vegGhiya = document.getElementById("vegGhiya")
     clickedItem.contains(vegGhiya) ? 
     clickedItem.removeChild(vegGhiya) : 
@@ -161,10 +206,10 @@ itemsAvailable[6].addEventListener('click', (e) => {
     placeOrder()
 })
 
-itemsAvailable[7].addEventListener('click', (e) => {
+itemsAvailable[10].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
-    itemsAvailable[7].classList.toggle('added')
+    itemsAvailable[10].classList.toggle('added')
     vegMint = document.getElementById("vegMint")
     clickedItem.contains(vegMint) ? 
     clickedItem.removeChild(vegMint) : 
@@ -172,10 +217,10 @@ itemsAvailable[7].addEventListener('click', (e) => {
     placeOrder()
 })
 
-itemsAvailable[8].addEventListener('click', (e) => {
+itemsAvailable[11].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
-    itemsAvailable[8].classList.toggle('added')
+    itemsAvailable[11].classList.toggle('added')
     vegDhania = document.getElementById("vegDhania")
     clickedItem.contains(vegDhania) ? 
     clickedItem.removeChild(vegDhania) : 
@@ -183,10 +228,10 @@ itemsAvailable[8].addEventListener('click', (e) => {
     placeOrder()
 })
 
-itemsAvailable[9].addEventListener('click', (e) => {
+itemsAvailable[12].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
-    itemsAvailable[9].classList.toggle('added')
+    itemsAvailable[12].classList.toggle('added')
     vegAloo = document.getElementById("vegAloo")
     clickedItem.contains(vegAloo) ? 
     clickedItem.removeChild(vegAloo) : 
@@ -194,10 +239,10 @@ itemsAvailable[9].addEventListener('click', (e) => {
     placeOrder()
 })
 
-itemsAvailable[10].addEventListener('click', (e) => {
+itemsAvailable[13].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
-    itemsAvailable[10].classList.toggle('added')
+    itemsAvailable[13].classList.toggle('added')
     vegOnion = document.getElementById("vegOnion")
     clickedItem.contains(vegOnion) ? 
     clickedItem.removeChild(vegOnion) : 
@@ -205,10 +250,10 @@ itemsAvailable[10].addEventListener('click', (e) => {
     placeOrder()
 })
 
-itemsAvailable[11].addEventListener('click', (e) => {
+itemsAvailable[14].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
-    itemsAvailable[11].classList.toggle('added')
+    itemsAvailable[14].classList.toggle('added')
     vegTomato = document.getElementById("vegTomato")
     clickedItem.contains(vegTomato) ? 
     clickedItem.removeChild(vegTomato) : 
@@ -216,10 +261,10 @@ itemsAvailable[11].addEventListener('click', (e) => {
     placeOrder()
 })
 
-itemsAvailable[12].addEventListener('click', (e) => {
+itemsAvailable[15].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')
-    itemsAvailable[12].classList.toggle('added')
+    itemsAvailable[15].classList.toggle('added')
     vegMirchi = document.getElementById("vegMirchi")
     clickedItem.contains(vegMirchi) ? 
     clickedItem.removeChild(vegMirchi) : 
@@ -234,19 +279,22 @@ let placeOrder = () => {
     document.getElementById("orderCart").innerText === "Your Order Appears Here!"?
     document.getElementById("orderCart").innerText ="":null;
 
-    document.getElementById("orderCart").innerText===""?enTxt = encodeURI(clickedItem.innerText):console.log("nope")
-        document.getElementById("order").contains(document.getElementById("eggs12"))   ||
-        document.getElementById("order").contains(document.getElementById("oneTray"))  ||
-        document.getElementById("order").contains(document.getElementById("twoTray"))  ||
-        document.getElementById("order").contains(document.getElementById("twoLtrs"))  ||
-        document.getElementById("order").contains(document.getElementById("threeLtrs"))||
-        document.getElementById("order").contains(document.getElementById("fourLtrs")) ||
-        document.getElementById("order").contains(document.getElementById("vegGhiya")) ||
-        document.getElementById("order").contains(document.getElementById("vegMint"))  ||
-        document.getElementById("order").contains(document.getElementById("vegDhania"))||
-        document.getElementById("order").contains(document.getElementById("vegAloo"))  ||
-        document.getElementById("order").contains(document.getElementById("vegOnion")) ||
-        document.getElementById("order").contains(document.getElementById("vegTomato"))||
+    enTxt = encodeURI(clickedItem.innerText)
+        document.getElementById("order").contains(document.getElementById("eggs12"))    ||
+        document.getElementById("order").contains(document.getElementById("oneTray"))   ||
+        document.getElementById("order").contains(document.getElementById("twoTray"))   ||
+        document.getElementById("order").contains(document.getElementById("twoLtrs"))   ||
+        document.getElementById("order").contains(document.getElementById("threeLtrs")) ||
+        document.getElementById("order").contains(document.getElementById("fourLtrs"))  ||      
+        document.getElementById("order").contains(document.getElementById("halfKgGhee"))||
+        document.getElementById("order").contains(document.getElementById("oneKgGhee")) ||
+        document.getElementById("order").contains(document.getElementById("twoKgGhee")) ||
+        document.getElementById("order").contains(document.getElementById("vegGhiya"))  ||
+        document.getElementById("order").contains(document.getElementById("vegMint"))   ||
+        document.getElementById("order").contains(document.getElementById("vegDhania")) ||
+        document.getElementById("order").contains(document.getElementById("vegAloo"))   ||
+        document.getElementById("order").contains(document.getElementById("vegOnion"))  ||
+        document.getElementById("order").contains(document.getElementById("vegTomato")) ||
         document.getElementById("order").contains(document.getElementById("vegMirchi"))?
         orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}"><button class="waOrder"> Kindly Deliver It</button></a>`: orderCart.innerText = "Cart Empty";
 //https://wa.me/918683000497

@@ -231,8 +231,10 @@ itemsAvailable[12].addEventListener('click', (e) => {
 //The Only Function that does the job for placing order and do nothing if empty
 //encoding the text on the go from cart and adding it to the anchor tag for whatsapp encoded text message
 let placeOrder = () => {
-    document.getElementById("orderCart").innerText === "Your Order Appears Here!"?document.getElementById("orderCart").innerText ="":console.log("nope");
-    document.getElementById("orderCart").innerText===""?enTxt = encodeURI(clickedItem.innerText):console.log("nogo")
+    document.getElementById("orderCart").innerText === "Your Order Appears Here!"?
+    document.getElementById("orderCart").innerText ="":null;
+
+    document.getElementById("orderCart").innerText===""?enTxt = encodeURI(clickedItem.innerText):console.log("nope")
         document.getElementById("order").contains(document.getElementById("eggs12"))   ||
         document.getElementById("order").contains(document.getElementById("oneTray"))  ||
         document.getElementById("order").contains(document.getElementById("twoTray"))  ||

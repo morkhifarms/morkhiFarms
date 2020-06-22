@@ -39,9 +39,7 @@
   <!-- End Google Tag Manager (noscript) -->
     <div class="wrapper">
         <div class="farms header">
-            <div class="logo">
-            <img src="images/morkhi_logo.webp" loading="lazy" width="69.625" height="100">
-            </div>       
+            <div class="logo"></div>       
           <div class="brandColor upperCase largeText">Morkhi Farms</div>
           <sup class="brandText brandSubText upperCase">Pure & Fresh</sup>
           <h4>Location Bara Gaon, Karnal</h4>
@@ -54,6 +52,7 @@
 
             <div class="farmProduce">
               <h4 class="brandText marginBottom">Order on WhatsApp</h4>
+              <div class="eggsCategory"></div>
               <img src="images/eggs.png" loading="lazy" width="50" height="50">
               <h2 class="brandText">Eggs</h2>
               <ul>
@@ -74,6 +73,7 @@
             <!--MILK Section-->
 
                 <div class="farmProduce">
+                  <div class="milkCategory"></div>
                   <img src="images/a2sahiwal.png" loading="lazy" width="48.56" height="50">
                   <h2 class="brandText">A2 Cow Milk</h2>
               <ul>
@@ -94,6 +94,7 @@
             <!--Vegetables Section -->
 
                 <div class="farmProduce">
+                  <div class="vegetablesCategory"></div>
                   <img src="images/vege.png" loading="lazy" width="50" height="50">
                   <h2 class="brandText">Seasonal Vegetables</h2>
               <ul>
@@ -153,9 +154,7 @@
           </div>
           </div>
           <script src="app.js"></script>
-</body>
-</html>
-<script>function ready(fn) {
+          <!-- <script>function ready(fn) {
   if (document.readyState != 'loading') {
     fn();
   } else if (document.addEventListener) {
@@ -170,6 +169,33 @@
 
 // test
 window.ready(function() {
-    alert('it works');
+   
 });
-</script>
+</script> -->
+</body>
+</html>
+<style>
+    .logo{
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(images/morkhi_logo.webp);
+  }
+  .eggsCategory,
+  .milkCategory,
+  .vegetablesCategory{
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .eggsCategory{
+    background-image: url(images/eggs.png);
+  }
+  .milkCategory{
+    background-image: url(images/a2sahiwal.png);
+  }
+  .vegetablesCategory{
+    background-image: url(images/vege.png);
+  }
+</style>
+

@@ -29,7 +29,7 @@
 <body id="body">
     <div class="wrapper">
         <div class="farms header">
-            <div class="logo"></div>       
+            <div id="mfLogo" class="logo"></div>       
           <div class="brandColor upperCase largeText">Morkhi Farms</div>
           <sup class="brandText brandSubText upperCase">Pure & Fresh</sup>
           <h4>Location Bara Gaon, Karnal</h4>
@@ -42,7 +42,7 @@
 
             <div class="farmProduce">
               <h4 class="orderOnWhatsApp brandText marginBottom">Order on WhatsApp</h4>
-              <div class="eggsCategory"></div>
+              <div id="mfEggs" class="eggsCategory"></div>
               <h2 class="brandText">Eggs</h2>
               <ul>
                 <li>
@@ -62,7 +62,7 @@
             <!--MILK Section-->
 
                 <div class="farmProduce">
-                  <div class="milkCategory"></div>
+                  <div id="mfMilk" class="milkCategory"></div>
                   <h2 class="brandText">A2 Cow Milk</h2>
               <ul>
                 <li>
@@ -82,7 +82,7 @@
             <!--Vegetables Section -->
 
                 <div class="farmProduce">
-                  <div class="vegetablesCategory"></div>
+                  <div id="mfVege" class="vegetablesCategory"></div>
                   <h2 class="brandText">Seasonal Vegetables</h2>
               <ul>
                 <li>
@@ -143,41 +143,29 @@
           <script src="app.js"></script>
 </body>
 </html>
-<style>
-      .logo{
-    background: url(images/morkhi_logo.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 69.625px;
-    padding: 65px;
-    height: auto;
-    margin-top: 52px;
-
-  }
-  .eggsCategory,
-  .milkCategory,
-  .vegetablesCategory{
-    height: 50px;
-    padding:50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .eggsCategory{
-    background-image: url(images/eggs.png);
-    width:50px;
-  }
-  .milkCategory{
-    background-image: url(images/a2sahiwal.png);
-    width: 48.56px;
-  }
-  .vegetablesCategory{
-    background-image: url(images/vege.png);
-    width:50px;
-  }
-</style>
 <script>
-  window.addEventListener('load', function() {
-        document.getElementById('body').className += "loaded";
-});
+  function loadBackgrounds() {
+  if (document.getElementById) {
+    document.getElementById("mfLogo").style.backgroundImage = "url(https://morkhifarms.in/images/morkhi_logo.webp) no-repeat -9999px -9999px";
+    document.getElementById("mfEggs").style.backgroundImage = "url(https://morkhifarms.in/images/eggs.png) no-repeat -9999px -9999px";
+    document.getElementById("mfMilk").style.backgroundImage = "url(https://morkhifarms.in/images/a2sahiwal.png) no-repeat -9999px -9999px";
+    document.getElementById("mfVege").style.backgroundImage = "url(https://morkhifarms.in/images/vege.png) no-repeat -9999px -9999px";
+  }
+  console.log("images Loaded ok")
+}
+
+function whenLoadEventReady(loadBgsFunction){
+    let quicklyLoad = window.onload;
+            if(typeof window.onload !== 'function'){
+              window.onload = loadBgsFunction;
+            }else {
+              window.onload = function(){
+                if(quicklyLoad){
+                  quicklyLoad();
+                }
+                loadBgsFunction();
+              }
+            }
+}
+whenLoadEventReady(loadBackgrounds);
 </script>

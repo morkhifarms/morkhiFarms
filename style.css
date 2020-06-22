@@ -6,11 +6,11 @@
     margin:0;
   }
   h4:not(.orderOnWhatsApp) {
-    margin-bottom: 86px;
+    margin-bottom: 113px;
     padding-bottom: 1px;
 }
   .orderOnWhatsApp{
-    margin-top: 122px;
+    margin-top: 138px;
     position: relative;
   }
   .orderOnWhatsApp:before {
@@ -23,7 +23,7 @@
     margin-left: 40px;
 }
   h3{
-      margin-bottom: 96px;
+      margin-bottom: 74px;
       letter-spacing: 5px;
   }
   .content {
@@ -34,17 +34,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 69.625px;
-    padding: 65px;
+    width: 40px;
+    padding: 35px;
     height: auto;
-    margin-top: 52px;
-
   }
   .eggsCategory,
   .milkCategory,
   .vegetablesCategory{
     height: 50px;
-    padding:50px;
+    padding:35px;
     background-repeat: no-repeat;
     background-size: contain;
   }

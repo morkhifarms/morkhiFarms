@@ -261,6 +261,16 @@
   .payMethods{
     margin-top: 10px;
     padding: 5px;
+    position: relative;
+  }
+  .payMethods::after{
+    content: "Cash On Delivery";
+    position: absolute;
+    right: 47px;
+    bottom: -10px;
+    color: inherit;
+    font-size: 0.8rem;
+
   }
   .new::after{
     content: "🎗";

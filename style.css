@@ -73,11 +73,12 @@
   }
   button{
     padding:15px;
-    width:14rem;
+    min-width:14rem;
     border:2px #F8DD53 solid;
     border-radius:5px;
     background-color: #fff;
     position: relative;
+    font-size: 1.3rem;
   }
  
   .header, .footer {

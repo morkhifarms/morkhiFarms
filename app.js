@@ -19,6 +19,11 @@ var clickedItem = document.getElementById("order"),
     vegOnion,
     vegTomatoes,
     vegMirchi,
+    vegBhindi,
+    vegKaddu,
+    vegGobhi,
+    vegBroccoli,
+    vegBeans,
     orderItem = document.querySelectorAll(".orderListItem"),
     orderCart = document.getElementById("orderCart"),
     itemsToOrder,
@@ -96,7 +101,30 @@ var clickedItem = document.getElementById("order"),
     <div id="vegMirchi" class="orderListItem">
     <div title="You can edit quantities on WhatsApp screen">
         ${itemsAvailable[15].value}</div>
-        </div>`  
+        </div>`,
+    listVegBhindi = `
+        <div id="vegBhindi" class="orderListItem">
+        <div title="You can edit quantities on WhatsApp screen">
+            ${itemsAvailable[16].value}</div>
+            </div>`
+    listVegKaddu = `
+        <div id="vegKaddu" class="orderListItem">
+        <div title="You can edit quantities on WhatsApp screen">
+            ${itemsAvailable[17].value}</div>
+            </div>`     
+    listVegGobhi = `
+        <div id="vegGobhi" class="orderListItem">
+        <div title="You can edit quantities on WhatsApp screen">
+            ${itemsAvailable[18].value}</div>
+            </div>`   
+    listVegBroccoli = `
+        <div id="vegBroccoli" class="orderListItem">
+        <div>${itemsAvailable[19].value}</div>
+            </div>`    
+    listVegBeans = `
+        <div id="vegBeans" class="orderListItem">
+        <div>${itemsAvailable[20].value}</div>
+            </div>`  //stopped using title attribute, I don't know why? 
 console.log(itemsAvailable);
 
 //add or remove items from the order Cart, 
@@ -271,7 +299,56 @@ itemsAvailable[15].addEventListener('click', (e) => {
     clickedItem.insertAdjacentHTML('afterBegin', listVegMirchi)
     placeOrder()  
 })
-
+itemsAvailable[16].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[16].classList.toggle('added')
+    vegBhindi = document.getElementById("vegBhindi")
+    clickedItem.contains(vegBhindi) ? 
+    clickedItem.removeChild(vegBhindi) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listVegBhindi)
+    placeOrder()  
+})
+itemsAvailable[17].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[17].classList.toggle('added')
+    vegKaddu = document.getElementById("vegKaddu")
+    clickedItem.contains(vegKaddu) ? 
+    clickedItem.removeChild(vegKaddu) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listVegKaddu)
+    placeOrder()  
+})
+itemsAvailable[18].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[18].classList.toggle('added')
+    vegGobhi = document.getElementById("vegGobhi")
+    clickedItem.contains(vegGobhi) ? 
+    clickedItem.removeChild(vegGobhi) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listVegGobhi)
+    placeOrder()  
+})
+itemsAvailable[19].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[19].classList.toggle('added')
+    vegBroccoli = document.getElementById("vegBroccoli")
+    clickedItem.contains(vegBroccoli) ? 
+    clickedItem.removeChild(vegBroccoli) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listVegBroccoli)
+    placeOrder()  
+})
+itemsAvailable[20].addEventListener('click', (e) => {
+    e.preventDefault()
+    orderCart.classList.remove('disabled')
+    itemsAvailable[20].classList.toggle('added')
+    vegBeans = document.getElementById("vegBeans")
+    clickedItem.contains(vegBeans) ? 
+    clickedItem.removeChild(vegBeans) : 
+    clickedItem.insertAdjacentHTML('afterBegin', listVegBeans)
+    placeOrder()  
+})
 
 //The Only Function that does the job for placing order and do nothing if empty
 //encoding the text on the go from cart and adding it to the anchor tag for whatsapp encoded text message
@@ -280,22 +357,27 @@ let placeOrder = () => {
     document.getElementById("orderCart").innerText ="":null;
 
     enTxt = encodeURI(clickedItem.innerText)
-        document.getElementById("order").contains(document.getElementById("eggs12"))    ||
-        document.getElementById("order").contains(document.getElementById("oneTray"))   ||
-        document.getElementById("order").contains(document.getElementById("twoTray"))   ||
-        document.getElementById("order").contains(document.getElementById("twoLtrs"))   ||
-        document.getElementById("order").contains(document.getElementById("threeLtrs")) ||
-        document.getElementById("order").contains(document.getElementById("fourLtrs"))  ||      
-        document.getElementById("order").contains(document.getElementById("halfKgGhee"))||
-        document.getElementById("order").contains(document.getElementById("oneKgGhee")) ||
-        document.getElementById("order").contains(document.getElementById("twoKgGhee")) ||
-        document.getElementById("order").contains(document.getElementById("vegGhiya"))  ||
-        document.getElementById("order").contains(document.getElementById("vegMint"))   ||
-        document.getElementById("order").contains(document.getElementById("vegDhania")) ||
-        document.getElementById("order").contains(document.getElementById("vegAloo"))   ||
-        document.getElementById("order").contains(document.getElementById("vegOnion"))  ||
-        document.getElementById("order").contains(document.getElementById("vegTomato")) ||
-        document.getElementById("order").contains(document.getElementById("vegMirchi"))?
+        document.getElementById("order").contains(document.getElementById("eggs12"))     ||
+        document.getElementById("order").contains(document.getElementById("oneTray"))    ||
+        document.getElementById("order").contains(document.getElementById("twoTray"))    ||
+        document.getElementById("order").contains(document.getElementById("twoLtrs"))    ||
+        document.getElementById("order").contains(document.getElementById("threeLtrs"))  ||
+        document.getElementById("order").contains(document.getElementById("fourLtrs"))   ||      
+        document.getElementById("order").contains(document.getElementById("halfKgGhee")) ||
+        document.getElementById("order").contains(document.getElementById("oneKgGhee"))  ||
+        document.getElementById("order").contains(document.getElementById("twoKgGhee"))  ||
+        document.getElementById("order").contains(document.getElementById("vegGhiya"))   ||
+        document.getElementById("order").contains(document.getElementById("vegMint"))    ||
+        document.getElementById("order").contains(document.getElementById("vegDhania"))  ||
+        document.getElementById("order").contains(document.getElementById("vegAloo"))    ||
+        document.getElementById("order").contains(document.getElementById("vegOnion"))   ||
+        document.getElementById("order").contains(document.getElementById("vegTomato"))  ||
+        document.getElementById("order").contains(document.getElementById("vegMirchi"))  ||
+        document.getElementById("order").contains(document.getElementById("vegBhindi"))  ||
+        document.getElementById("order").contains(document.getElementById("vegKaddu"))   ||
+        document.getElementById("order").contains(document.getElementById("vegGobhi"))   ||
+        document.getElementById("order").contains(document.getElementById("vegBroccoli"))||
+        document.getElementById("order").contains(document.getElementById("vegBeans"))?
         orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}"><button class="waOrder"> Kindly Deliver It</button></a>`: orderCart.innerText = "Cart Empty";
 //https://wa.me/918683000497
 

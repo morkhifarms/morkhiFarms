@@ -1,13 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 *{
-    -webkit-box-sizing:border-box;
-            box-sizing:border-box;
+    box-sizing:border-box;
   }
   body,ul,li{
     padding:0;
@@ -43,9 +35,6 @@
       letter-spacing: 5px;
   }
   .content {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-area: content;
   }
   .logo{
@@ -93,30 +82,21 @@
   }
  
   .header, .footer {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-area: header;
     text-align:center;
   }
   
   .footer {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-area: footer;
   }
   
   .wrapper {
           margin-top: 70px;
           font-family: 'Inria Sans', sans-serif;
-          display: -ms-grid;
           display: grid;
           grid-gap: 10px;
-          -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
           grid-template-columns: 1fr 1fr 1fr;
-          -ms-grid-rows:auto 10px auto 10px auto;
-              grid-template-areas:
+          grid-template-areas:
           "header  header  header"
           "content content content"
           "footer  footer  footer";
@@ -136,20 +116,11 @@
     text-align:center;
     width:100vw;
     /* border-bottom:3px #fa0 solid; */
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
+    flex-direction:column;
     position: relative;
-    -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center;
-    -webkit-box-align:center;
-        -ms-flex-align:center;
-            align-items:center;
+    justify-content:center;
+    align-items:center;
     margin-bottom:100px;
   }
   .header,
@@ -158,19 +129,10 @@
   }
   .header{
       height: 300px;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
   .brandColor{
       color: #E29414;
@@ -261,17 +223,11 @@
   .orderListItem{
     width:200px;
     padding:5px;
-    display:-ms-grid;
     display:grid;
     text-align:left;
-    -ms-grid-columns:1fr;
     grid-template-columns:1fr;
-    -webkit-box-pack:center;
-        -ms-flex-pack:center;
-            justify-content:center;
-    -webkit-box-align:center;
-        -ms-flex-align:center;
-            align-items:center;
+    justify-content:center;
+    align-items:center;
     grid-gap:5px;
     font-size:1rem;
     text-transform:capitalize;

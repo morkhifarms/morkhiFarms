@@ -127,30 +127,6 @@ var clickedItem = document.getElementById("order"),
             </div>`  //stopped using title attribute, I don't know why? 
 console.log(itemsAvailable);
 
-/* let cartItems = [
-
-[itemsAvailable[0],dozen,"egg12",listDozen],
-[itemsAvailable[1],oneTray,"oneTray",listOneTray],
-[itemsAvailable[2],twoTray,"twoTray",listTwoTray],
-] 
-*/
-// function orderManager(availableItemIndex,idStore,id,listItemHTML){
-//     itemsAvailable[availableItemIndex].addEventListener('click', (e) => {
-//         e.preventDefault()
-//         orderCart.classList.remove('disabled')
-//         itemsAvailable[0].classList.toggle('added')
-//         idStore = document.getElementById(id)
-//         clickedItem.contains(idStore) ? 
-//         clickedItem.removeChild(idStore) : 
-//         clickedItem.insertAdjacentHTML('afterBegin', listItem)
-//         placeOrder()
-//     })
-// }
-// cartItems.forEach(e=>{
-//    orderManager.apply(null,e)
-// })
-//add or remove items from the order Cart,
-
 itemsAvailable[0].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')

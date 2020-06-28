@@ -69,52 +69,52 @@ var clickedItem = document.getElementById("order"),
         </div>`,
     listVegGhiya = `
     <div id="vegGhiya" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[9].value}</div>
         </div>`,
     listVegMint = `
     <div id="vegMint" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[10].value}</div>
         </div>`,
     listVegDhania = `
     <div id="vegDhania" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[11].value}</div>
         </div>`,
     listVegAloo = `
     <div id="vegAloo" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[12].value}</div>
         </div>`     
     listVegOnion = `
     <div id="vegOnion" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[13].value}</div>
         </div>`    
     listVegTomatoes = `
     <div id="vegTomato" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[14].value}</div>
         </div>` 
     listVegMirchi = `
     <div id="vegMirchi" class="orderListItem">
-    <div title="You can edit quantities on WhatsApp screen">
+    <div>
         ${itemsAvailable[15].value}</div>
         </div>`,
     listVegBhindi = `
         <div id="vegBhindi" class="orderListItem">
-        <div title="You can edit quantities on WhatsApp screen">
+        <div>
             ${itemsAvailable[16].value}</div>
             </div>`
     listVegKaddu = `
         <div id="vegKaddu" class="orderListItem">
-        <div title="You can edit quantities on WhatsApp screen">
+        <div>
             ${itemsAvailable[17].value}</div>
             </div>`     
     listVegGobhi = `
         <div id="vegGobhi" class="orderListItem">
-        <div title="You can edit quantities on WhatsApp screen">
+        <div>
             ${itemsAvailable[18].value}</div>
             </div>`   
     listVegBroccoli = `
@@ -127,7 +127,30 @@ var clickedItem = document.getElementById("order"),
             </div>`  //stopped using title attribute, I don't know why? 
 console.log(itemsAvailable);
 
-//add or remove items from the order Cart, 
+/* let cartItems = [
+
+[itemsAvailable[0],dozen,"egg12",listDozen],
+[itemsAvailable[1],oneTray,"oneTray",listOneTray],
+[itemsAvailable[2],twoTray,"twoTray",listTwoTray],
+] 
+*/
+// function orderManager(availableItemIndex,idStore,id,listItemHTML){
+//     itemsAvailable[availableItemIndex].addEventListener('click', (e) => {
+//         e.preventDefault()
+//         orderCart.classList.remove('disabled')
+//         itemsAvailable[0].classList.toggle('added')
+//         idStore = document.getElementById(id)
+//         clickedItem.contains(idStore) ? 
+//         clickedItem.removeChild(idStore) : 
+//         clickedItem.insertAdjacentHTML('afterBegin', listItem)
+//         placeOrder()
+//     })
+// }
+// cartItems.forEach(e=>{
+//    orderManager.apply(null,e)
+// })
+//add or remove items from the order Cart,
+
 itemsAvailable[0].addEventListener('click', (e) => {
     e.preventDefault()
     orderCart.classList.remove('disabled')

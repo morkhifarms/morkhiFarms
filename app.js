@@ -377,7 +377,7 @@ let placeOrder = () => {
         document.getElementById("order").contains(document.getElementById("vegGobhi"))   ||
         document.getElementById("order").contains(document.getElementById("vegBroccoli"))||
         document.getElementById("order").contains(document.getElementById("vegBeans"))?
-        orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}"><button class="waOrder"> Kindly Deliver It</button></a>`: orderCart.innerText = "Cart Empty";
+        orderCart.innerHTML = `<a href="https://wa.me/918683000497?text=${enTxt}"><button class="waOrder send-me-the-items"> Kindly Deliver It</button></a>`: orderCart.innerText = "Cart Empty";
 //https://wa.me/918683000497
 
     if (orderCart.innerText === "Cart Empty") {

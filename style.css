@@ -338,7 +338,39 @@
     top:10px;
     left:5px;
   }
-
+  a{
+    -webkit-transition: background-color .25s ease,border-color .25s ease,color .25s ease;
+    -o-transition: background-color .25s ease,border-color .25s ease,color .25s ease;
+    transition: background-color .25s ease,border-color .25s ease,color .25s ease;
+  }
+  a > button.send-me-the-items {
+    -webkit-animation: directly2020fromfarms 1.5s linear infinite;
+            animation: directly2020fromfarms 1.5s linear infinite;
+    background: -o-linear-gradient(173deg, #ea215a, #d45241, #24dbbd, #ce45e9, #ea215a);
+    background: linear-gradient(277deg, #ea215a, #d45241, #24dbbd, #ce45e9, #ea215a);
+    background-size: 1000% 100%;
+    display: inline-block;
+  }
+    @-webkit-keyframes directly2020fromfarms {
+      0% { background-position: 0% }
+      50% { background-position: 50% }
+      100% { background-position: 100% }
+    }
+    @keyframes directly2020fromfarms {
+      0% { background-position: 0% }
+      50% { background-position: 50% }
+      100% { background-position: 100% }
+    }
+  
+  
+  
+  a> button.send-me-the-items:hover {
+    color: #fff;
+    background: -o-linear-gradient(173deg, #333, #333);
+    background: linear-gradient(277deg, #333, #333);
+    background-size: 1000% 100%;
+  }
+  
 
 /*font*/
 /* latin-ext */

@@ -203,17 +203,17 @@
     position: relative;
   }
   .a2Milk::before,.a2Ghee::before{
-    content: "A2 Milk";
     position: absolute;
     top: 26px;
     right: 0;
     font-size: 0.8rem;
+    color: #000;
   }
   .a2Milk::before{
-    content: "A2 Milk";
+    content: "A2 MILK";
   }
   .a2Ghee::before{
-    content: "A2 Milk Ghee";
+    content: "A2 MILK GHEE";
   }
   .instruction{
       font-size: 0.7rem;

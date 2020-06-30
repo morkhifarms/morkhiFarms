@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="Farmer Community bringing the farm produce directly to your door steps">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="apple-mobile-web-app-title" content="Morkhi Farms">
-<meta name="application-name" content="Morkhi Farms">
-<meta name="msapplication-TileColor" content="#ffc40d">
-<meta name="theme-color" content="#ffe4b7">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N22XR3P');</script>
-  <!-- End Google Tag Manager -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Farmer Community bringing the farm produce directly to your door steps"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="apple-mobile-web-app-title" content="Morkhi Farms" />
+    <meta name="application-name" content="Morkhi Farms" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffe4b7" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N22XR3P");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-LD2Z425RRQ');
-</script>
-<link rel="preload" href="style.css" as="style">
-<link rel="stylesheet" href="style.css">
-<title>Morkhi Farms</title>
-</head>
-<body id="body">
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N22XR3P"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- 
+      gtag("config", "G-LD2Z425RRQ");
+    </script>
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Morkhi Farms</title>
+  </head>
+  <body id="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N22XR3P"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- 
     <div id="reload">
     <a href="#" onclick="location.reload()">
       <?xml version="1.0" encoding="UTF-8"?>
@@ -57,195 +75,301 @@
   </div> 
 -->
     <div class="wrapper">
-        <div class="farms header">
-            <div id="mfLogo" class="logo"></div>       
-          <div class="brandColor upperCase largeText">Morkhi Farms</div>
-          <sup class="brandText brandSubText upperCase">Pure & Fresh</sup>
-          <h4>Location Bara Gaon, Karnal</h4>
-          <h3 class="brandText">Home Delivery<br>7:00am to 10:00am</h3>
+      <div class="farms header">
+        <div id="mfLogo" class="logo"></div>
+        <div class="brandColor upperCase largeText">Morkhi Farms</div>
+        <sup class="brandText brandSubText upperCase">Pure & Fresh</sup>
+        <h4>Location Bara Gaon, Karnal</h4>
+        <h3 class="brandText">Home Delivery<br />7:00am to 10:00am</h3>
+      </div>
+
+      <div class="farms content">
+        <h4 class="orderOnWhatsApp brandText marginBottom">
+          Order on WhatsApp
+        </h4>
+
+        <!--MILK Section-->
+
+        <div class="farmProduce">
+          <div id="mfMilk" class="milkCategory"></div>
+          <h2 class="brandText a2Milk">Sahiwal Desi Cow</h2>
+          <ul>
+            <li>
+              <button
+                data-name="milk"
+                class="available"
+                value="a2 milk  2 Litrs"
+              >
+                Two Ltrs
+              </button>
+            </li>
+            <li>
+              <button
+                data-name="milk"
+                class="available"
+                value="a2 milk  3 Litrs"
+              >
+                Three Ltrs
+              </button>
+            </li>
+            <li>
+              <button
+                data-name="milk"
+                class="available"
+                value="a2 milk  4 Litrs"
+              >
+                Four Ltrs or more
+              </button>
+            </li>
+            <li>
+              <button
+                data-name="ghee"
+                class="available new"
+                value="a2 milk ghee  500 gm"
+              >
+                Half Kg A2 Milk Ghee
+              </button>
+            </li>
+            <li>
+              <button
+                data-name="ghee"
+                class="available new"
+                value="a2 milk ghee  1 Kg"
+              >
+                One Kg A2 Milk Ghee
+              </button>
+            </li>
+            <li>
+              <button
+                data-name="ghee"
+                class="available new"
+                value="a2 milk ghee  2 Kg"
+              >
+                Two Kg A2 Milk Ghee
+              </button>
+            </li>
+            <span
+              ><a
+                href="https://wa.me/918683000497?text=My%20%2AFeedback%20on%20Milk%20%3A%2A"
+              >
+                <button class="feedback">Feedback</button></a
+              ></span
+            >
+          </ul>
         </div>
 
-          <div class="farms content">
+        <!--EGGS Section -->
 
-            <!--EGGS Section --> 
-              <!--Brigadier Randhir reported issue here that "Order on WhatsApp" appears after eggs section-->
-              <h4 class="orderOnWhatsApp brandText marginBottom">Order on WhatsApp</h4>
-            <div class="farmProduce">
-              <div id="mfEggs" class="eggsCategory"></div>
-              <h2 class="brandText">Eggs</h2>
-              <ul>
-                <li>
-                  <button class="available" value="eggs 12(1 Dozen)">One Dozen</button>
-                  <br>
-                  <span class="instruction">Delivery Charges extra ₹10/-</span></li>
-                <li>
-                  <button class="available" value="eggs  1 Tray">One Tray</button></li>
-                <li>
-                  <button class="available" value="eggs  2 Trays or more">Two Trays or more</button>
-                </li>
-                <span>
-                  <a href="https://wa.me/918683000497?text=My%20%2AFeedback%20on%20Eggs%3A%2A">
-                  <button class="feedback">Feedback</button>
-                </a>
-              </span>
-              </ul>
-            </div>
+        <div class="farmProduce">
+          <div id="mfEggs" class="eggsCategory"></div>
+          <h2 class="brandText">Eggs</h2>
+          <ul>
+            <li>
+              <button class="available" value="eggs 12(1 Dozen)">
+                One Dozen
+              </button>
+              <br />
+              <span class="instruction">Delivery Charges extra ₹10/-</span>
+            </li>
+            <li>
+              <button class="available" value="eggs  1 Tray">One Tray</button>
+            </li>
+            <li>
+              <button class="available" value="eggs  2 Trays or more">
+                Two Trays or more
+              </button>
+            </li>
+            <span>
+              <a
+                href="https://wa.me/918683000497?text=My%20%2AFeedback%20on%20Eggs%3A%2A"
+              >
+                <button class="feedback">Feedback</button>
+              </a>
+            </span>
+          </ul>
+        </div>
 
-            <!--MILK Section-->
+        <!--Vegetables Section -->
 
-                <div class="farmProduce">
-                  <div id="mfMilk" class="milkCategory"></div>
-                  <h2 class="brandText">A2 Milk Desi Cow</h2>
-              <ul>
-                <li>
-                  <button data-name="milk" class="available" value="a2 milk  2 Litrs">Two Ltrs</button>
-                </li>
-                <li>
-                  <button data-name="milk" class="available" value="a2 milk  3 Litrs">Three Ltrs</button>
-                </li>
-                <li>
-                  <button data-name="milk" class="available" value="a2 milk  4 Litrs">Four Ltrs or more</button>
-                </li>                
-                <li>
-                  <button data-name="ghee" class="available new" value="a2 milk ghee  500 gm">Half Kg A2 Milk Ghee</button>
-                </li>                
-                <li>
-                  <button data-name="ghee" class="available new" value="a2 milk ghee  1 Kg">One Kg A2 Milk Ghee</button>
-                </li>                
-                <li>
-                  <button data-name="ghee" class="available new" value="a2 milk ghee  2 Kg">Two Kg A2 Milk Ghee</button>
-                </li>
-                <span><a href="https://wa.me/918683000497?text=My%20%2AFeedback%20on%20Milk%20%3A%2A">
-                  <button class="feedback">Feedback</button></a></span>
-              </ul>
-            </div>
+        <div class="farmProduce">
+          <div id="mfVege" class="vegetablesCategory"></div>
+          <h2 class="brandText">Seasonal Vegetables</h2>
+          <ul>
+            <li>
+              <button class="available" value="Ghia  1 Kg">Ghia</button>
+            </li>
+            <li>
+              <button class="available" value="Pudina  250 gm">Pudina</button>
+            </li>
+            <li>
+              <button class="available" value="Dhania  250 gm">Dhania</button>
+            </li>
+            <li>
+              <button class="available" value="Aaloo  1 Kg">Potatoes</button>
+            </li>
+            <li>
+              <button class="available" value="Onions  1 Kg">Onions</button>
+            </li>
+            <li>
+              <button class="available outOfStock" value="Tomatoes  1 Kg">Tomatoes</button>
+            </li>
+            <li>
+              <button class="available" value="Hari Mirch  500 gm">
+                Hari Mirch
+              </button>
+            </li>
+            <li>
+              <button class="available new" value="Bhindi  1 Kg">Bhindi</button>
+            </li>
+            <li>
+              <button class="available new" value="Kaddu  1 Kg">Kaddu</button>
+            </li>
+            <li>
+              <button class="available new soldOut" value="Ghobi  1 Kg">Ghobi</button>
+            </li>
+            <li>
+              <button class="available new outOfStock" value="Broccoli  1 Kg">
+                Broccoli
+              </button>
+            </li>
+            <li>
+              <button class="available new" value="Beans  1 Kg">Beans</button>
+            </li>
 
-            <!--Vegetables Section -->
+            <span
+              ><a
+                href="https://wa.me/918683000497?text=My%20feedback%20on%20%2AVegetables%20Section%2A%3A"
+              >
+                <button class="feedback">Feedback</button>
+              </a>
+            </span>
+          </ul>
+        </div>
 
-                <div class="farmProduce">
-                  <div id="mfVege" class="vegetablesCategory"></div>
-                  <h2 class="brandText">Seasonal Vegetables</h2>
-              <ul>
-                <li>
-                  <button class="available" value="Ghia  1 Kg">Ghia</button>
-                </li>
-                <li>
-                  <button class="available" value="Pudina  250 gm">Pudina</button>
-                </li>
-                <li>
-                  <button class="available" value="Dhania  250 gm">Dhania</button>
-                </li>                
-                <li>
-                  <button class="available" value="Aaloo  1 Kg">Potatoes</button>
-                </li>                
-                <li>
-                  <button class="available" value="Onions  1 Kg">Onions</button> 
-                </li>                
-                <li>
-                  <button class="available" value="Tomatoes  1 Kg">Tomatoes</button>
-                </li>                
-                <li>
-                  <button class="available" value="Hari Mirch  500 gm">Hari Mirch</button>
-                </li>
-                <li>
-                  <button class="available new" value="Bhindi  1 Kg">Bhindi</button>
-                </li>                
-                <li>
-                  <button class="available new" value="Kaddu  1 Kg">Kaddu</button>
-                </li>                
-                <li>
-                  <button class="available new" value="Ghobi  1 Kg">Ghobi</button>
-                </li>                
-                <li>
-                  <button class="available new" value="Broccoli  1 Kg">Broccoli</button>
-                </li>                
-                <li>
-                  <button class="available new" value="Beans  1 Kg">Beans</button>
-                </li>
+        <!--Order Section or Call to Order-->
 
-                <span><a href="https://wa.me/918683000497?text=My%20feedback%20on%20%2AVegetables%20Section%2A%3A">
-                  <button class="feedback">Feedback</button>
-                </a>
-              </span>
-              </ul>
-            </div>
-
-            <!--Order Section or Call to Order-->
-
-            <div class="farmProduce">
+        <div class="farmProduce">
           <ul>
             <li>
               <div id="order">
-                
-                <div id="orderCart" class="disabled">Your Order Appears Here!</div>
-                <div class="payMethods"><img src="/images/Payment_Icons.png" height="14" alt=""></div>
+                <div id="orderCart" class="disabled">
+                  Your Order Appears Here!
+                </div>
+                <div class="payMethods">
+                  <img src="/images/Payment_Icons.png" height="14" alt="" />
+                </div>
                 <!-- <div class="offer"></div> -->
               </div>
             </li>
-            <li><button class="importantNotice"><b>No-Contact Delivery</b> <br>Delivery Associate will place the order on your doorstep and step back to maintain a 2-meter distance</button></li>
+            <li>
+              <button class="importantNotice">
+                <b>No-Contact Delivery</b> <br />Delivery Associate will place
+                the order on your doorstep and step back to maintain a 2-meter
+                distance
+              </button>
+            </li>
             <li>
               <a href="tel:+918683000497">
                 <button class="callUs">or Call us</button>
               </a>
             </li>
             <li>
-              <a href='whatsapp://send?text=https%3A%2F%2Fdownload.morkhifarms.in'>
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <a
+                href="whatsapp://send?text=https%3A%2F%2Fdownload.morkhifarms.in"
+              >
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="68px"
+                  height="68px"
+                  viewBox="0 0 68 68"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
                   <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
                   <title>Group 2</title>
                   <desc>Created with Sketch.</desc>
-                  <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="order-flow" transform="translate(-361.000000, -464.000000)">
-                          <g id="Group-2" transform="translate(361.000000, 464.000000)">
-                              <circle id="Oval" fill="#377E22" cx="34" cy="34" r="34"></circle>
-                              <path d="M27.250394,35.3318142 C26.5243715,36.3420529 25.3390216,37 24,37 C21.790861,37 20,35.209139 20,33 C20,30.790861 21.790861,29 24,29 C25.1204706,29 26.1333392,29.4606984 26.8595163,30.2030054 L37.1928112,24.2304241 C37.0676279,23.842793 37,23.4292942 37,23 C37,20.790861 38.790861,19 41,19 C43.209139,19 45,20.790861 45,23 C45,25.209139 43.209139,27 41,27 C39.8796724,27 38.8669193,26.5394192 38.1407618,25.7972788 L27.7949237,31.7322305 C27.927949,32.1306075 28,32.5568896 28,33 C28,33.1690625 27.9895116,33.3356752 27.9691499,33.4992231 L37.852217,39.5316325 C38.5845231,38.5990624 39.7223023,38 41,38 C43.209139,38 45,39.790861 45,42 C45,44.209139 43.209139,46 41,46 C38.790861,46 37,44.209139 37,42 C37,41.748553 37.0232011,41.5025248 37.0675794,41.2639396 L27.250394,35.3318142 Z" id="Combined-Shape" fill="#FFFFFF"></path>
-                          </g>
+                  <g
+                    id="Page-2"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="order-flow"
+                      transform="translate(-361.000000, -464.000000)"
+                    >
+                      <g
+                        id="Group-2"
+                        transform="translate(361.000000, 464.000000)"
+                      >
+                        <circle
+                          id="Oval"
+                          fill="#377E22"
+                          cx="34"
+                          cy="34"
+                          r="34"
+                        ></circle>
+                        <path
+                          d="M27.250394,35.3318142 C26.5243715,36.3420529 25.3390216,37 24,37 C21.790861,37 20,35.209139 20,33 C20,30.790861 21.790861,29 24,29 C25.1204706,29 26.1333392,29.4606984 26.8595163,30.2030054 L37.1928112,24.2304241 C37.0676279,23.842793 37,23.4292942 37,23 C37,20.790861 38.790861,19 41,19 C43.209139,19 45,20.790861 45,23 C45,25.209139 43.209139,27 41,27 C39.8796724,27 38.8669193,26.5394192 38.1407618,25.7972788 L27.7949237,31.7322305 C27.927949,32.1306075 28,32.5568896 28,33 C28,33.1690625 27.9895116,33.3356752 27.9691499,33.4992231 L37.852217,39.5316325 C38.5845231,38.5990624 39.7223023,38 41,38 C43.209139,38 45,39.790861 45,42 C45,44.209139 43.209139,46 41,46 C38.790861,46 37,44.209139 37,42 C37,41.748553 37.0232011,41.5025248 37.0675794,41.2639396 L27.250394,35.3318142 Z"
+                          id="Combined-Shape"
+                          fill="#FFFFFF"
+                        ></path>
                       </g>
+                    </g>
                   </g>
-              </svg>
-            </a>
-          </li>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
-          </div>
+      </div>
 
-<!--Footer Section Awareness Marketing-->
+      <!--Footer Section Awareness Marketing-->
 
-          <div class="farms footer footerText">
-            <p>MADE WITH ❤️LOVE FOR FARMER COMMUNITY</p>
+      <div class="farms footer footerText">
+        <p>MADE WITH ❤️LOVE FOR FARMER COMMUNITY</p>
 
-            <div class="regtd">2020 Morkhi Farms</div> <SUP>App Developer & Farmer Enabler: VipulAnand.in</SUP>
-          </div>
-          </div>
-          <script>
-            function loadBackgrounds() {
-            if (document.getElementById) {
-              document.getElementById("mfLogo").style.backgroundImage = "url(https://morkhifarms.in/images/morkhi_logo.webp) no-repeat -9999px -9999px";
-              document.getElementById("mfEggs").style.backgroundImage = "url(https://morkhifarms.in/images/eggs.png) no-repeat -9999px -9999px";
-              document.getElementById("mfMilk").style.backgroundImage = "url(https://morkhifarms.in/images/a2sahiwal.png) no-repeat -9999px -9999px";
-              document.getElementById("mfVege").style.backgroundImage = "url(https://morkhifarms.in/images/vege.png) no-repeat -9999px -9999px";
+        <div class="regtd">2020 Morkhi Farms</div>
+        <sup>App Developer & Farmer Enabler: VipulAnand.in</sup>
+      </div>
+    </div>
+    <script>
+      function loadBackgrounds() {
+        if (document.getElementById) {
+          document.getElementById("mfLogo").style.backgroundImage =
+            "url(https://morkhifarms.in/images/morkhi_logo.webp) no-repeat -9999px -9999px";
+          document.getElementById("mfEggs").style.backgroundImage =
+            "url(https://morkhifarms.in/images/eggs.png) no-repeat -9999px -9999px";
+          document.getElementById("mfMilk").style.backgroundImage =
+            "url(https://morkhifarms.in/images/a2sahiwal.png) no-repeat -9999px -9999px";
+          document.getElementById("mfVege").style.backgroundImage =
+            "url(https://morkhifarms.in/images/vege.png) no-repeat -9999px -9999px";
+        }
+        console.log("images Loaded ok");
+      }
+
+      function whenLoadEventReady(loadBgsFunction) {
+        let quicklyLoad = window.onload;
+        if (typeof window.onload !== "function") {
+          window.onload = loadBgsFunction;
+        } else {
+          window.onload = function () {
+            if (quicklyLoad) {
+              quicklyLoad();
             }
-            console.log("images Loaded ok")
-          }
-          
-          function whenLoadEventReady(loadBgsFunction){
-              let quicklyLoad = window.onload;
-                      if(typeof window.onload !== 'function'){
-                        window.onload = loadBgsFunction;
-                      }else {
-                        window.onload = function(){
-                          if(quicklyLoad){
-                            quicklyLoad();
-                          }
-                          loadBgsFunction();
-                        }
-                      }
-          }
-          whenLoadEventReady(loadBackgrounds);
-          </script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.js" integrity="sha256-xuQzN96uMRdoZgvt365uzyZVPtt3uRZeeX1RvC3Klio=" crossorigin="anonymous"></script>
-          <script src="app.js"></script>
-
-</body>
+            loadBgsFunction();
+          };
+        }
+      }
+      whenLoadEventReady(loadBackgrounds);
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/pulltorefreshjs/0.1.20/index.umd.js"
+      integrity="sha256-xuQzN96uMRdoZgvt365uzyZVPtt3uRZeeX1RvC3Klio="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>

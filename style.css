@@ -64,7 +64,7 @@
     width:50px;
   }
   .milkCategory{
-    background-image: url(https://morkhifarms.in/images/a2sahiwal.png);
+    background-image: url(https://morkhifarms.in/images/a2Milk.png);
     width: 48.56px;
   }
   .vegetablesCategory{
@@ -102,7 +102,7 @@
   }
   
   .wrapper {
-          margin-top: 70px;
+          margin-top: 100px;
           font-family: 'Inria Sans', sans-serif;
           display: -ms-grid;
           display: grid;
@@ -191,6 +191,18 @@
   }
   .brandText{
       color:#523b27;
+      padding-bottom: 27px;
+
+  }
+  .a2Milk{
+    position: relative;
+  }
+  .a2Milk::before{
+    content: "A2 Milk";
+    position: absolute;
+    top: 26px;
+    right: 0;
+    font-size: 0.8rem;
   }
   .instruction{
       font-size: 0.7rem;
@@ -298,19 +310,28 @@
     color:#777;
     border:1px dotted #888;
   }
-  .outOfStock{
+  .outOfStock, .outOfSeason, .soldOut{
     pointer-events:none;
     color:#777;
     border:1px dotted #888;
     position: relative;
   }
-  .outOfStock::before{
+  .outOfStock::before, .outOfSeason::before, .soldOut::before{
     position: absolute;
-    content: "out of stock";
     font-size: 0.7rem;
     bottom: 2px;
     left:38%
+  } 
+  .outOfStock::before{
+    content: "out of stock";
   }
+  .outOfSeason::before{
+    content: "out of season";
+  }  
+  .soldOut::before{
+    content: "sold out now";
+  }
+
   .payMethods{
     margin-top: 10px;
     padding: 5px;

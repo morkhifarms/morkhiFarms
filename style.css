@@ -76,6 +76,7 @@
     background-image: url(https://morkhifarms.in/images/vege.png);
     width:50px;
   }
+
   ul li{
     list-style-type:none;
     margin-bottom:50px;
@@ -199,10 +200,10 @@
       padding-bottom: 27px;
 
   }
-  .a2Milk,.a2Ghee{
+  .a2Milk,.a2Ghee,.vegetablesSeason{
     position: relative;
   }
-  .a2Milk::before,.a2Ghee::before{
+  .a2Milk::before,.a2Ghee::before,.vegetablesSeason::before{
     position: absolute;
     top: 26px;
     right: 0;
@@ -211,11 +212,15 @@
     text-transform: uppercase;
   }
   .a2Milk::before{
-    content: "A2 MILK";
+    content: "a2 milk";
   }
   .a2Ghee::before{
-    content: "A2 MILK GHEE";
+    content: "a2 milk ghee";
   }
+  .vegetablesSeason::before{
+    content: "summer";
+  }
+
   .instruction{
       font-size: 0.7rem;
   }

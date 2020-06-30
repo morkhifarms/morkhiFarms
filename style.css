@@ -208,6 +208,7 @@
     right: 0;
     font-size: 0.8rem;
     color: #000;
+    text-transform: uppercase;
   }
   .a2Milk::before{
     content: "A2 MILK";

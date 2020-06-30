@@ -53,6 +53,7 @@
   }
   .eggsCategory,
   .milkCategory,
+  .gheeCategory,
   .vegetablesCategory{
     height: 50px;
     padding:35px;
@@ -65,7 +66,11 @@
   }
   .milkCategory{
     background-image: url(https://morkhifarms.in/images/a2Milk.png);
-    width: 48.56px;
+    width: 50px;
+  }
+  .gheeCategory{
+    background-image: url(https://morkhifarms.in/images/a2Ghee.png);
+    width: 50px;
   }
   .vegetablesCategory{
     background-image: url(https://morkhifarms.in/images/vege.png);
@@ -194,15 +199,21 @@
       padding-bottom: 27px;
 
   }
-  .a2Milk{
+  .a2Milk,.a2Ghee{
     position: relative;
   }
-  .a2Milk::before{
+  .a2Milk::before,.a2Ghee::before{
     content: "A2 Milk";
     position: absolute;
     top: 26px;
     right: 0;
     font-size: 0.8rem;
+  }
+  .a2Milk::before{
+    content: "A2 Milk";
+  }
+  .a2Ghee::before{
+    content: "A2 Milk Ghee";
   }
   .instruction{
       font-size: 0.7rem;

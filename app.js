@@ -398,6 +398,11 @@ window.addEventListener('userproximity', function(event) {
   });
   //document.domain !== "www.morkhifarms.in"?window.close():""
 
-
+  const ptr = PullToRefresh.init({
+    mainElement: 'body',
+    onRefresh() {
+      window.location.reload();
+    }
+  });
 
   

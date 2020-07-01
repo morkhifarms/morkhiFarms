@@ -205,20 +205,20 @@
   }
   .a2Milk::before,.a2Ghee::before,.vegetablesSeason::before{
     position: absolute;
-    top: 26px;
-    right: 0;
-    font-size: 0.8rem;
+    top: 25px;
+    width:190px;
+    font-size: 1.3rem;
     color: #000;
     text-transform: uppercase;
   }
   .a2Milk::before{
-    content: "a2 milk";
+    content: "";
   }
   .a2Ghee::before{
-    content: "a2 milk ghee";
+    content: "";
   }
   .vegetablesSeason::before{
-    content: "summer";
+    content: "";
   }
 
   .instruction{

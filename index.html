@@ -21,7 +21,10 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
@@ -33,6 +36,7 @@
     <!-- End Google Tag Manager -->
     <script>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
@@ -44,6 +48,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Morkhi Farms</title>
   </head>
+
   <body id="body">
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -92,7 +97,7 @@
 
         <div class="farmProduce">
           <div id="mfMilk" class="milkCategory"></div>
-          <h2 class="brandText a2Milk">A2 Milk<br>Sahiwal Desi Cow</h2>
+          <h2 class="brandText a2Milk">A2 Milk<br />Sahiwal Desi Cow</h2>
           <ul>
             <li>
               <button
@@ -135,7 +140,7 @@
 
         <div class="farmProduce">
           <div id="mfMilk" class="gheeCategory"></div>
-          <h2 class="brandText a2Ghee">A2 Milk Ghee<br>Sahiwal Desi Cow</h2>
+          <h2 class="brandText a2Ghee">A2 Milk Ghee<br />Sahiwal Desi Cow</h2>
           <ul>
             <li>
               <button
@@ -227,7 +232,7 @@
               <button class="available" value="Onions  1 Kg">Onions</button>
             </li>
             <li>
-              <button class="available outOfStock" value="Tomatoes  1 Kg">Tomatoes</button>
+              <button class="available" value="Tomatoes  1 Kg">Tomatoes</button>
             </li>
             <li>
               <button class="available" value="Hari Mirch  500 gm">
@@ -241,10 +246,10 @@
               <button class="available new" value="Kaddu  1 Kg">Kaddu</button>
             </li>
             <li>
-              <button class="available new soldOut" value="Ghobi  1 Kg">Ghobi</button>
+              <button class="available new" value="Ghobi  1 Kg">Ghobi</button>
             </li>
             <li>
-              <button class="available new outOfStock" value="Broccoli  1 Kg">
+              <button class="available new" value="Broccoli  1 Kg">
                 Broccoli
               </button>
             </li>
@@ -363,7 +368,6 @@
           document.getElementById("mfVege").style.backgroundImage =
             "url(https://morkhifarms.in/images/vege.png) no-repeat -9999px -9999px";
         }
-        console.log("images Loaded ok");
       }
 
       function whenLoadEventReady(loadBgsFunction) {

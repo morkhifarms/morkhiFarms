@@ -386,18 +386,9 @@ let placeOrder = () => {
     } else return
 
 }
+document.domain !== "www.morkhifarms.in"?window.close():""
 
-window.addEventListener('userproximity', function(event) {
-    if (event.near) {
-      // let's power off the screen
-      navigator.mozPower.screenEnabled = false;
-    } else {
-      // Otherwise, let's power on the screen
-      navigator.mozPower.screenEnabled = true;
-    }
-  });
-  //document.domain !== "www.morkhifarms.in"?window.close():""
-
+  //Pull to refresh feature Lib
   const ptr = PullToRefresh.init({
     mainElement: 'body',
     onRefresh() {

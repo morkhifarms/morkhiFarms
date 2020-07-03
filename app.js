@@ -386,7 +386,7 @@ let placeOrder = () => {
     } else return
 
 }
-document.domain !== "www.morkhifarms.in"?window.close():""
+//document.domain !== "www.morkhifarms.in"?window.close():""
 
   //Pull to refresh feature Lib
   const ptr = PullToRefresh.init({

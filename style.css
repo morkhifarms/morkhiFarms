@@ -90,8 +90,14 @@
     background-color: #fff;
     position: relative;
     font-size: 1rem;
+    box-shadow: #e6e6e6 1px 8px 10px;
+    transition: all 200ms;
   }
- 
+  button:hover {
+    min-width: 13rem;
+    box-shadow: #b7b7b6 1px 1px 19px;
+    font-size: 0.8rem;
+  }
   .header, .footer {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -412,7 +418,8 @@
     background: linear-gradient(277deg, #333, #333);
     background-size: 1000% 100%;
   }
-  
+
+
 .importantNotice{
   background-color:#F8DD53;
   max-width: 80px;

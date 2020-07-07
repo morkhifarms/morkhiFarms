@@ -85,7 +85,7 @@
   button{
     padding:15px;
     min-width:14rem;
-    border:0.5pt #ffdd6d solid;
+    border:0.5pt #b7b7b6 solid;
     border-radius:5px;
     background-color: #fff;
     position: relative;
@@ -227,6 +227,7 @@
   .feedback{
       color: black;
       background-color: #FFD184;
+      border: 0px solid;
       width: 9rem;
       padding: 7px;
       font-size: 80%;
